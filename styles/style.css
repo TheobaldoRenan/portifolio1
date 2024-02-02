@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Permanent+Marker&display=swap');
+/*  font-family: 'Krona One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Permanent Marker', cursive;   */
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria:#1E90FF;
+    --cor-terciaria:#ff691e;
+    --cor-hover:#478dd344;
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:var(--cor-primaria);
+    box-sizing: border-box;
+    color: white;
+}
+
+.titulo-principal{
+    color: white;
+    font-size: 2rem;
+    font-family: var( --font-primaria);
+    font-weight: 400;
+}
+
+.titulo-destaque{
+    color: var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    font-size: 2rem;
+}
+
+.titulo-h2{
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+.texto{
+    color: rgb(212, 212, 212);
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);  
+}
+
+.paragrafo-index > p {
+    padding-bottom: 12px;
+}
+
+.paragrafo-about > p{
+    padding-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.paragrafo-cv > p {
+    padding-bottom: 12px;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 82px;    
+}
+
+.cabecalho-menu-link{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5%  15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.apresentacao__conteudo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao-cv{
+    margin: 5%  10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;   
+}
+
+.apresentacao__conteudo__cv{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;  
+    gap: 32px;
+}
+
+.titulo-links{
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border: 2px solid var(--cor-secundaria) ;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 18px 0;
+    text-decoration: none;
+    font-family: var(--font-primaria);
+    color: white;
+    box-shadow: 5px 5px 5px #ff691e78;
+}
+
+.link img{
+    height: 30px;
+    border-radius: 5px;
+}
+
+.link:hover{
+    background-color: var(--cor-hover);
+    width: 50%;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.cursos a {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.download {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 2rem;
+}
+
+.img-index{
+    border: 2px solid var(--cor-secundaria);
+    box-shadow: 5px 5px 5px #ff691e78;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.img-about{
+    width: 35%;
+}
+
+.image-cv{
+    border: 2px solid var(--cor-terciaria);
+    width: 55%;
+}
+
+.cursos {
+    color: rgb(212, 212, 212);
+    font-size: 1rem;
+    font-family: var(--font-secundaria);
+    padding-bottom: 10px;
+}
+
+.cursos span{
+    font-size: 0,50rem;
+}
+
+.cursos > li {
+    padding-bottom: 1rem;
+}
+
+@media(max-width: 1200px){
+        
+    .cabecalho{
+        padding:5% ;    
+    }
+
+    .cabecalho-menu{
+        
+        width: auto;
+        gap: 5%;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 25px;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    .apresentacao-cv{
+        flex-direction: column;
+        padding: auto;
+    }
+    .apresentacao__conteudo__cv{
+        width: auto;
+    }
+
+    .img-index{
+        width: 50%;
+    }
+
+    .img-cv{
+        width: auto;
+    }
+
+    .img-about{
+        width: 45%;
+    }
+
+    .image-cv{
+        width: 90%;
+    }
+}
